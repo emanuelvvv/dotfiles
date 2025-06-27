@@ -1,1 +1,50 @@
+* {
+    font-family: ttf-adwaita-mono-nerd;
+    border: none;
+}
+    
+#waybar {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 15px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 15px;
+}
+
+#custom-launcher {
+	padding-left: 15px;
+	padding-right: 20px;
+	font-size: 20px;
+	color: #5294E2;
+}
+
+#workspaces button {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.6);
+	padding: 1px;
+	margin: 4px;
+}
+
+#workspaces button:hover {
+	background: #d0cfcc;
+	border-radius: 11px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#workspaces button.active:not(:hover) {
+	color: #ffffff;
+}
+
+#cpu,
+#memory,
+#clock {
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #d0cfcc;
+	font-weight: bold;
+}
 

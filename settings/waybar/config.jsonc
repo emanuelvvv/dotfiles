@@ -1,1 +1,42 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "margin-top": 10,
+    "margin-left": 20,
+    "margin-right": 20,
+    "spacing": 4, // Gaps between modules (4px)
 
+    // Choose the order of the modules
+    "modules-left": ["custom/launcher"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["cpu", "memory", "clock"],
+
+    // Left modules configuration
+    "custom/launcher": {
+	    "format": "󰣇"
+    },
+
+    // Center modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": ""
+    },
+    
+    // Right modules configuration
+    "cpu": {
+        "format": "  {usage}%",
+	"interval": 5
+    },
+
+    "memory": {
+        "format": "   {percentage}%",
+	"interval": 5
+    },
+
+    "clock": {
+        "timezone": "America/Bogota"
+    }
+}
