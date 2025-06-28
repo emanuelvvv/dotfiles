@@ -1,0 +1,7 @@
+@theme "/usr/share/rofi/themes/spotlight-dark.rasi"
+
+configuration {
+	show-icons: true;
+	sort: false;
+	lines: 5;
+}
