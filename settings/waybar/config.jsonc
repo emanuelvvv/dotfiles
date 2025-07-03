@@ -1,42 +1,54 @@
-// -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "margin-top": 10,
     "margin-left": 20,
     "margin-right": 20,
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 20, // Gaps between modules (px)
 
     // Choose the order of the modules
-    "modules-left": ["custom/launcher"],
+    "modules-left": ["custom/launcher", "cpu", "memory"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["cpu", "memory", "clock"],
+    "modules-right": ["network", "battery", "clock"],
 
     // Left modules configuration
     "custom/launcher": {
-	    "format": "󰣇"
-    },
-
-    // Center modules configuration
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": ""
+	    "format": "󰣇 "
     },
     
-    // Right modules configuration
     "cpu": {
-        "format": "  {usage}%",
-	"interval": 5
+        "format": "   {usage}%",
     },
 
     "memory": {
         "format": "   {percentage}%",
-	"interval": 5
+    },
+
+    // Center mosules configuration
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+		"active": "󰧞",
+		"default": "󰧟"
+	}
+    },
+
+    // Right modules configuration
+    "network": {
+	"interval": 1,
+	"format": "    {essid}",
+	"format-disconnected": "󰖟   Disconnected"
+    },
+	
+    "battery": {
+	"interval": 1,
+	"format": "{icon}  {capacity}%",
+	"format-charging": "{icon}󱐋  {capacity}%",
+	"format-icons": [" ", " ", " ", " ", " "]
     },
 
     "clock": {
-        "timezone": "America/Bogota"
+	"timezone": "America/Bogota",
+	"format": "   {:%H:%M}"	
     }
 }

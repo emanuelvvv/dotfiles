@@ -12,39 +12,52 @@
 .modules-center,
 .modules-right {
 	background-color: rgba(0, 0, 0, 0.6);
-	border-radius: 15px;
+	border-radius: 11px;
+	margin: 0px;
 }
 
 #custom-launcher {
-	padding-left: 15px;
-	padding-right: 20px;
 	font-size: 20px;
 	color: #5294E2;
+	margin-left: 10px;
+}
+
+#cpu {
+	color: #d0cfcc;
+	font-weight: bold;
+}
+
+#memory {
+	color: #d0cfcc;
+	font-weight: bold;
+	margin-right: 10px;
 }
 
 #workspaces button {
-	font-size: 16px;
-	color: rgba(255, 255, 255, 0.6);
-	padding: 1px;
-	margin: 4px;
+	color: #d0cfcc;
+	background: transparent;
+	border-radius: 11px;
+	margin-left: 2px;
 }
 
 #workspaces button:hover {
-	background: #d0cfcc;
-	border-radius: 11px;
-	color: rgba(0, 0, 0, 0.6);
+	box-shadow: none;
 }
 
-#workspaces button.active:not(:hover) {
-	color: #ffffff;
-}
-
-#cpu,
-#memory,
-#clock {
-	padding-right: 15px;
-	padding-left: 15px;
+#network {
 	color: #d0cfcc;
 	font-weight: bold;
+	margin-left: 10px;
+}
+
+#battery {
+	color: #d0cfcc;
+	font-weight: bold;
+}
+
+#clock {
+	color: #d0cfcc;
+	font-weight: bold;
+	margin-right: 10px;
 }
 
