@@ -13,7 +13,7 @@
 
     // Left modules configuration
     "custom/launcher": {
-	    "format": "󰣇 ",
+	    "format": "󰣇 <span color = '#adadad'></span>",
 	    "on-click": "rofi -show drun"
     },
     
