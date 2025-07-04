@@ -56,7 +56,7 @@
 	"interval": 1,
 	"format": "{icon}  <span color = '#d0cfcc'>{capacity}%</span>",
 	"format-charging": "{icon}<span color = '#d0cfcc'>󱐋  {capacity}%</span>",
-	"format-icons": ["󰂎 ", "󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", "󰁹 "],
+	"format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 	"states": {
 		"warning": 20,
 		"critical": 10
