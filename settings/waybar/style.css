@@ -1,6 +1,8 @@
 * {
     font-family: ttf-adwaita-mono-nerd;
     border: none;
+    color: #d0cfcc;
+    font-weight: bold;
 }
     
 #waybar {
@@ -22,11 +24,6 @@
 	margin-left: 10px;
 }
 
-#cpu {
-	color: #d0cfcc;
-	font-weight: bold;
-}
-
 #memory {
 	color: #d0cfcc;
 	font-weight: bold;
@@ -34,25 +31,29 @@
 }
 
 #workspaces button {
-	color: #d0cfcc;
 	background: transparent;
 	border-radius: 11px;
-	margin-left: 2px;
+	margin-right: 2px;
 }
 
 #workspaces button:hover {
 	box-shadow: none;
 }
 
-#network {
-	color: #d0cfcc;
-	font-weight: bold;
-	margin-left: 10px;
+#pulseaudio {
+	margin-left: 10px;	
 }
 
-#battery {
-	color: #d0cfcc;
-	font-weight: bold;
+#battery.warning {
+	color: #f8c914;
+}
+
+#battery.critical {
+	color: #fc3c2f;
+}
+
+#battery.charging {
+	color: #37c35a;
 }
 
 #clock {
